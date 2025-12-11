@@ -1,176 +1,87 @@
-# Snakes-on-a-plane-
-This project is a simple yet polished implementation of the classic Snake game built using Python and the Pygame library.
-Snake Game – Documentation
-Overview
+███████╗███╗   ██╗ █████╗ ██╗  ██╗███████╗███████╗
+██╔════╝████╗  ██║██╔══██╗██║ ██╔╝██╔════╝██╔════╝
+███████╗██╔██╗ ██║███████║█████╔╝ █████╗  ███████╗
+╚════██║██║╚██╗██║██╔══██║██╔═██╗ ██╔══╝  ╚════██║
+███████║██║ ╚████║██║  ██║██║  ██╗███████╗███████║
+╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝
 
-This project is a simple yet polished implementation of the classic Snake game built using Python and the Pygame library.
-The objective is to control a growing snake, eat food items, avoid collisions, and achieve the highest possible score.
-The game features smooth movement, dynamic speed increase, grid-based rendering, and a clean user interface.
+.
 
-Features
+🐍 **Snakes-on-a-Plane**
+**A polished and modern version of the classic Snake Game, built with Python & Pygame.
+Smooth controls, dynamic difficulty, clean visuals — simple, fast, and fun.**
 
-Classic Snake Gameplay – Move the snake around a grid and eat food to grow.
+🚀 **Features**
 
-Smooth Controls – Supports arrow keys or WASD.
+🐍 **Classic Snake Gameplay**
 
-Dynamic Difficulty – Game speed increases each time food is eaten.
+🎹 **Smooth WASD + Arrow Key Controls**
 
-Collision Detection
+⚡ **Dynamic Speed Increase as you eat food**
 
-Wall collision ends the game
+💥 **Collision Detection (walls + self)**
 
-Self-collision ends the game
+🔄 **Quick Restart (Press R)**
 
-Restart Mechanism – Press R after game over to restart.
+🎨 **Minimal Dark-Themed UI**
 
-HUD Display – Shows real-time score during gameplay.
+📊 **Live Score Display**
 
-Clean Visual Style – Dark background, color-coded snake segments, and minimalistic grid lines.
+📦 **Installation**
 
-Requirements
+git clone https://github.com/YOUR-USERNAME/Snakes-on-a-Plane.git
+**cd Snakes-on-a-Plane**
 
-Python 3.x
 
-pygame library
+**Install Dependencies
+**
+Make sure Python 3.x is installed.
 
-Install pygame using:
+Install pygame:
 
 pip install pygame
 
-How to Run
-
-Save the script as snake.py
-
-Run the game using:
-
-python3 snake.py
-
-
-The game window will open automatically.
-
-Controls
+🎮 **Controls**
 Key	Action
-← / A	Move Left
-→ / D	Move Right
 ↑ / W	Move Up
 ↓ / S	Move Down
-R	Restart after Game Over
+← / A	Move Left
+→ / D	Move Right
+R	Restart Game
 Q / ESC	Quit Game
-Gameplay Mechanics
-Movement
+🧠 Gameplay Mechanics
+🚶 Movement
 
-The snake moves continuously in the last chosen direction.
+The snake continuously moves forward
 
-The player cannot instantly reverse direction (e.g., from left to right). This prevents immediate self-collision.
+You cannot reverse direction instantly (prevents self-destruction)
 
-Food
+🍎 **Food**
 
-Food appears randomly on any free cell.
+Spawns at random grid locations
 
 Eating food:
 
-Increases score by 1
++1 score
 
-Grows the snake by one segment
+Snake grows
 
-Increases game speed up to a defined maximum
+Snake speed increases by 0.5 FPS
 
-Speed
+⚡ **Speed**
 
-Starting speed: 8 FPS
+Start speed: 8 FPS
 
-Maximum speed: 25 FPS
+Max speed: 25 FPS
 
-Each food eaten increases speed by 0.5 FPS
+💀 **Game Over**
 
-Game Over Conditions
+Occurs when:
 
-The game ends when:
+Snake hits wall
 
-The snake hits a wall
+Snake hits itself
 
-The snake collides with its own body
+A Game Over message appears with restart instructions.
 
-A “Game Over” message will be displayed, along with instructions to restart or quit.
 
-Code Structure
-Main Components
-
-Configuration Section
-Sets constants such as grid size, cell size, colors, and speed values.
-
-Utility Functions
-
-rnd_cell(exclude) – Chooses a random grid coordinate not occupied by the snake.
-
-draw_grid() – Draws the background grid.
-
-draw_rect() – Renders snake segments and food.
-
-main() Function
-
-Initializes pygame, screen, clock, and fonts
-
-Runs the game loop
-
-Handles:
-
-Input events
-
-Snake movement
-
-Collision logic
-
-Rendering
-
-Game over & restart behavior
-
-new_game()
-
-Resets all game variables:
-
-Snake starting position
-
-Direction
-
-Food location
-
-Score
-
-Speed
-
-Visual Design
-
-Background: Dark gray to reduce eye strain
-
-Grid Lines: Subtle lines for orientation
-
-Snake Head: Bright green
-
-Snake Body: Darker green
-
-Food: Red for visibility
-
-Text Color: Light gray
-
-Possible Enhancements
-
-You can extend the game with:
-
-Sound effects (eating, game over)
-
-Adjustable difficulty levels
-
-High score saving
-
-Animations
-
-Skins or themes
-
-Obstacles mode
-
-Menu screen
-
-License
-
-This project is free to use, modify, and distribute for learning or personal use.
